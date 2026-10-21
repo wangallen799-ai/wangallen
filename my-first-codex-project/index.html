@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f7f4">
+  <meta name="description" content="我的第一个Codex项目：一个可以查看当前日期和时间的中文网页。">
+  <title>我的第一个Codex项目</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="./" aria-label="我的第一个Codex项目首页"><span class="brand-icon" aria-hidden="true">&gt;_</span> Codex</a>
+      <span class="project-label">我的第一个Codex项目</span>
+    </header>
+    <main>
+      <section class="card" aria-labelledby="title">
+        <div class="status"><span aria-hidden="true"></span> 云端已就绪</div>
+        <div class="illustration" aria-hidden="true">&lt;/&gt;</div>
+        <p class="eyebrow">你好，新的开始</p>
+        <h1 id="title">Codex云端运行成功</h1>
+        <p class="intro">从一行代码开始，让想法成为现实。<br>这是属于你的第一个中文网页。</p>
+        <div class="time-panel">
+          <p class="panel-label">此刻，记录你的第一步</p>
+          <div class="time-output" role="status" aria-live="polite" aria-atomic="true">
+            <time id="current-time" hidden></time>
+            <p id="placeholder">点击下方按钮，查看当前日期和时间</p>
+            <p id="timezone" hidden></p>
+          </div>
+          <button id="show-time" type="button"><span aria-hidden="true">◷</span> 显示当前日期和时间 <span aria-hidden="true">↗</span></button>
+          <p class="hint">每次点击，更新为你所在时区的当前时间</p>
+        </div>
+        <noscript><p>请在浏览器中启用 JavaScript，以使用时间按钮。</p></noscript>
+        <div class="technologies" aria-label="使用的技术"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </section>
+    </main>
+    <footer>我的第一个Codex项目 <span aria-hidden="true">·</span> 在云端，迈出第一步</footer>
+  </div>
+</body>
+</html>
